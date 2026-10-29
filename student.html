@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students - Assignment Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Assignment Management System
+        </div>
+
+        <div class="nav-links">
+
+            <span id="welcomeUser"></span>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Menu</h3>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="assignments.html">
+                Assignments
+            </a>
+
+            <a href="add-assignment.html">
+                Add Assignment
+            </a>
+
+            <a href="students.html">
+                Students
+            </a>
+
+            <a href="submissions.html">
+                Submissions
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <h1>
+                Students
+            </h1>
+
+            <p>
+                Sample student information and assignment status.
+            </p>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Semester</th>
+                            <th>Submitted</th>
+                            <th>Pending</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="studentTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/students.js"></script>
+
+</body>
+</html>

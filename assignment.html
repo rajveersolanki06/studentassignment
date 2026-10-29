@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignments - Assignment Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Assignment Management System
+        </div>
+
+        <div class="nav-links">
+
+            <span id="welcomeUser"></span>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Menu</h3>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="assignments.html">
+                Assignments
+            </a>
+
+            <a href="add-assignment.html" id="addLink">
+                Add Assignment
+            </a>
+
+            <a href="students.html" id="studentsLink">
+                Students
+            </a>
+
+            <a href="submissions.html" id="submissionsLink">
+                Submissions
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <div class="page-heading">
+
+                <div>
+
+                    <h1>
+                        Assignments
+                    </h1>
+
+                    <p>
+                        View and manage assignments.
+                    </p>
+
+                </div>
+
+                <a
+                    href="add-assignment.html"
+                    id="addAssignmentBtn"
+                    class="btn"
+                >
+                    Add Assignment
+                </a>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Subject</th>
+                            <th>Description</th>
+                            <th>Teacher</th>
+                            <th>Deadline</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="assignmentTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/assignments.js"></script>
+
+</body>
+</html>

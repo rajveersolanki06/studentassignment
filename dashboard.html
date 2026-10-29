@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Assignment Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Assignment Management System
+        </div>
+
+        <div class="nav-links">
+
+            <span id="welcomeUser"></span>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Menu</h3>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="assignments.html">
+                Assignments
+            </a>
+
+            <a href="add-assignment.html" id="addLink">
+                Add Assignment
+            </a>
+
+            <a href="students.html" id="studentsLink">
+                Students
+            </a>
+
+            <a href="submissions.html" id="submissionsLink">
+                Submissions
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <h1 id="dashboardTitle">
+                Dashboard
+            </h1>
+
+            <!-- Dashboard Cards -->
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        Total Assignments
+                    </h3>
+
+                    <p id="totalAssignments">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Submitted
+                    </h3>
+
+                    <p id="submittedAssignments">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Pending
+                    </h3>
+
+                    <p id="pendingAssignments">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3 id="fourthCardTitle">
+                        Upcoming
+                    </h3>
+
+                    <p id="fourthCardValue">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Recent Assignments -->
+            <section class="table-section">
+
+                <h2>
+                    Recent Assignments
+                </h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Assignment</th>
+                                <th>Subject</th>
+                                <th>Teacher</th>
+                                <th>Deadline</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="recentAssignments">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

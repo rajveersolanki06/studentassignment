@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Assignment Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Assignment Management System
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+
+    </nav>
+
+    <!-- Login Form -->
+    <main class="form-page">
+
+        <div class="form-box">
+
+            <h1>Login</h1>
+
+            <p class="small-text">
+                Demo login for the college project
+            </p>
+
+            <form id="loginForm">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                >
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    required
+                >
+
+                <label for="role">Role</label>
+
+                <select id="role" required>
+
+                    <option value="">
+                        Select Role
+                    </option>
+
+                    <option value="student">
+                        Student
+                    </option>
+
+                    <option value="teacher">
+                        Teacher
+                    </option>
+
+                </select>
+
+                <button type="submit" class="btn">
+                    Login
+                </button>
+
+                <p id="loginMessage" class="message"></p>
+
+            </form>
+
+            <!-- Demo Credentials -->
+            <div class="demo-login">
+
+                <h3>Demo Credentials</h3>
+
+                <p>
+                    <strong>Student:</strong>
+                    student@gmail.com / 123456
+                </p>
+
+                <p>
+                    <strong>Teacher:</strong>
+                    teacher@gmail.com / 123456
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
